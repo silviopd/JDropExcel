@@ -1,0 +1,1490 @@
+ switch (columnas) {
+                    case 1:
+
+                        if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") || jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                                a = Double.parseDouble(jTable1.getValueAt(z, 0).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") == -1) {
+                                a = Integer.parseInt(jTable1.getValueAt(z, 0).toString());
+                            } else {
+                                a = jTable1.getValueAt(z, 0).toString();
+                            }
+                        } else {
+                            a = jTable1.getValueAt(z, 0).toString();
+                        }
+
+                        obj.Agregar1parametro(consulta, a);
+                        break;
+                    case 2:
+
+                        if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") || jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                                a = Double.parseDouble(jTable1.getValueAt(z, 0).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") == -1) {
+                                a = Integer.parseInt(jTable1.getValueAt(z, 0).toString());
+                            } else {
+                                a = jTable1.getValueAt(z, 0).toString();
+                            }
+                        } else {
+                            a = jTable1.getValueAt(z, 0).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") || jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                                b = Double.parseDouble(jTable1.getValueAt(z, 1).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") == -1) {
+                                b = Integer.parseInt(jTable1.getValueAt(z, 1).toString());
+                            } else {
+                                b = jTable1.getValueAt(z, 1).toString();
+                            }
+                        } else {
+                            b = jTable1.getValueAt(z, 1).toString();
+                        }
+                        
+                        obj.Agregar2parametro(consulta, a, b);
+                        break;
+                    case 3:
+                        if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") || jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                                a = Double.parseDouble(jTable1.getValueAt(z, 0).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") == -1) {
+                                a = Integer.parseInt(jTable1.getValueAt(z, 0).toString());
+                            } else {
+                                a = jTable1.getValueAt(z, 0).toString();
+                            }
+                        } else {
+                            a = jTable1.getValueAt(z, 0).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") || jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                                b = Double.parseDouble(jTable1.getValueAt(z, 1).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") == -1) {
+                                b = Integer.parseInt(jTable1.getValueAt(z, 1).toString());
+                            } else {
+                                b = jTable1.getValueAt(z, 1).toString();
+                            }
+                        } else {
+                            b = jTable1.getValueAt(z, 1).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") || jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                                c = Double.parseDouble(jTable1.getValueAt(z, 2).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") == -1) {
+                                c = Integer.parseInt(jTable1.getValueAt(z, 2).toString());
+                            } else {
+                                c = jTable1.getValueAt(z, 2).toString();
+                            }
+                        } else {
+                            c = jTable1.getValueAt(z, 2).toString();
+                        }
+                        
+                        obj.Agregar3parametro(consulta, a, b, c);
+                        break;
+                    case 4:
+                        if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") || jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                                a = Double.parseDouble(jTable1.getValueAt(z, 0).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") == -1) {
+                                a = Integer.parseInt(jTable1.getValueAt(z, 0).toString());
+                            } else {
+                                a = jTable1.getValueAt(z, 0).toString();
+                            }
+                        } else {
+                            a = jTable1.getValueAt(z, 0).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") || jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                                b = Double.parseDouble(jTable1.getValueAt(z, 1).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") == -1) {
+                                b = Integer.parseInt(jTable1.getValueAt(z, 1).toString());
+                            } else {
+                                b = jTable1.getValueAt(z, 1).toString();
+                            }
+                        } else {
+                            b = jTable1.getValueAt(z, 1).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") || jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                                c = Double.parseDouble(jTable1.getValueAt(z, 2).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") == -1) {
+                                c = Integer.parseInt(jTable1.getValueAt(z, 2).toString());
+                            } else {
+                                c = jTable1.getValueAt(z, 2).toString();
+                            }
+                        } else {
+                            c = jTable1.getValueAt(z, 2).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") || jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                                d = Double.parseDouble(jTable1.getValueAt(z, 3).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") == -1) {
+                                d = Integer.parseInt(jTable1.getValueAt(z, 3).toString());
+                            } else {
+                                d = jTable1.getValueAt(z, 3).toString();
+                            }
+                        } else {
+                            d = jTable1.getValueAt(z, 3).toString();
+                        }
+                        
+                        obj.Agregar4parametro(consulta, a, b, c, d);
+                        break;
+                    case 5:
+                        if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") || jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                                a = Double.parseDouble(jTable1.getValueAt(z, 0).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") == -1) {
+                                a = Integer.parseInt(jTable1.getValueAt(z, 0).toString());
+                            } else {
+                                a = jTable1.getValueAt(z, 0).toString();
+                            }
+                        } else {
+                            a = jTable1.getValueAt(z, 0).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") || jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                                b = Double.parseDouble(jTable1.getValueAt(z, 1).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") == -1) {
+                                b = Integer.parseInt(jTable1.getValueAt(z, 1).toString());
+                            } else {
+                                b = jTable1.getValueAt(z, 1).toString();
+                            }
+                        } else {
+                            b = jTable1.getValueAt(z, 1).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") || jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                                c = Double.parseDouble(jTable1.getValueAt(z, 2).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") == -1) {
+                                c = Integer.parseInt(jTable1.getValueAt(z, 2).toString());
+                            } else {
+                                c = jTable1.getValueAt(z, 2).toString();
+                            }
+                        } else {
+                            c = jTable1.getValueAt(z, 2).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") || jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                                d = Double.parseDouble(jTable1.getValueAt(z, 3).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") == -1) {
+                                d = Integer.parseInt(jTable1.getValueAt(z, 3).toString());
+                            } else {
+                                d = jTable1.getValueAt(z, 3).toString();
+                            }
+                        } else {
+                            d = jTable1.getValueAt(z, 3).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") || jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                                e = Double.parseDouble(jTable1.getValueAt(z, 4).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") == -1) {
+                                e = Integer.parseInt(jTable1.getValueAt(z, 4).toString());
+                            } else {
+                                e = jTable1.getValueAt(z, 4).toString();
+                            }
+                        } else {
+                            e = jTable1.getValueAt(z, 4).toString();
+                        }
+                        
+                        obj.Agregar5parametro(consulta, a, b, c, d, e);
+                        break;
+                    case 6:
+                        
+                        if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") || jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                                a = Double.parseDouble(jTable1.getValueAt(z, 0).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") == -1) {
+                                a = Integer.parseInt(jTable1.getValueAt(z, 0).toString());
+                            } else {
+                                a = jTable1.getValueAt(z, 0).toString();
+                            }
+                        } else {
+                            a = jTable1.getValueAt(z, 0).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") || jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                                b = Double.parseDouble(jTable1.getValueAt(z, 1).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") == -1) {
+                                b = Integer.parseInt(jTable1.getValueAt(z, 1).toString());
+                            } else {
+                                b = jTable1.getValueAt(z, 1).toString();
+                            }
+                        } else {
+                            b = jTable1.getValueAt(z, 1).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") || jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                                c = Double.parseDouble(jTable1.getValueAt(z, 2).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") == -1) {
+                                c = Integer.parseInt(jTable1.getValueAt(z, 2).toString());
+                            } else {
+                                c = jTable1.getValueAt(z, 2).toString();
+                            }
+                        } else {
+                            c = jTable1.getValueAt(z, 2).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") || jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                                d = Double.parseDouble(jTable1.getValueAt(z, 3).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") == -1) {
+                                d = Integer.parseInt(jTable1.getValueAt(z, 3).toString());
+                            } else {
+                                d = jTable1.getValueAt(z, 3).toString();
+                            }
+                        } else {
+                            d = jTable1.getValueAt(z, 3).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") || jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                                e = Double.parseDouble(jTable1.getValueAt(z, 4).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") == -1) {
+                                e = Integer.parseInt(jTable1.getValueAt(z, 4).toString());
+                            } else {
+                                e = jTable1.getValueAt(z, 4).toString();
+                            }
+                        } else {
+                            e = jTable1.getValueAt(z, 4).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") || jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                                f = Double.parseDouble(jTable1.getValueAt(z, 5).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") == -1) {
+                                f = Integer.parseInt(jTable1.getValueAt(z, 5).toString());
+                            } else {
+                                f = jTable1.getValueAt(z, 5).toString();
+                            }
+                        } else {
+                            f = jTable1.getValueAt(z, 5).toString();
+                        }
+                        
+                        obj.Agregar6parametro(consulta, a, b, c, d, e, f);
+                        break;
+                    case 7:
+                        
+                        if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") || jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                                a = Double.parseDouble(jTable1.getValueAt(z, 0).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") == -1) {
+                                a = Integer.parseInt(jTable1.getValueAt(z, 0).toString());
+                            } else {
+                                a = jTable1.getValueAt(z, 0).toString();
+                            }
+                        } else {
+                            a = jTable1.getValueAt(z, 0).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") || jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                                b = Double.parseDouble(jTable1.getValueAt(z, 1).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") == -1) {
+                                b = Integer.parseInt(jTable1.getValueAt(z, 1).toString());
+                            } else {
+                                b = jTable1.getValueAt(z, 1).toString();
+                            }
+                        } else {
+                            b = jTable1.getValueAt(z, 1).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") || jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                                c = Double.parseDouble(jTable1.getValueAt(z, 2).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") == -1) {
+                                c = Integer.parseInt(jTable1.getValueAt(z, 2).toString());
+                            } else {
+                                c = jTable1.getValueAt(z, 2).toString();
+                            }
+                        } else {
+                            c = jTable1.getValueAt(z, 2).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") || jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                                d = Double.parseDouble(jTable1.getValueAt(z, 3).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") == -1) {
+                                d = Integer.parseInt(jTable1.getValueAt(z, 3).toString());
+                            } else {
+                                d = jTable1.getValueAt(z, 3).toString();
+                            }
+                        } else {
+                            d = jTable1.getValueAt(z, 3).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") || jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                                e = Double.parseDouble(jTable1.getValueAt(z, 4).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") == -1) {
+                                e = Integer.parseInt(jTable1.getValueAt(z, 4).toString());
+                            } else {
+                                e = jTable1.getValueAt(z, 4).toString();
+                            }
+                        } else {
+                            e = jTable1.getValueAt(z, 4).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") || jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                                f = Double.parseDouble(jTable1.getValueAt(z, 5).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") == -1) {
+                                f = Integer.parseInt(jTable1.getValueAt(z, 5).toString());
+                            } else {
+                                f = jTable1.getValueAt(z, 5).toString();
+                            }
+                        } else {
+                            f = jTable1.getValueAt(z, 5).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") || jTable1.getValueAt(z, 6).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") && jTable1.getValueAt(z, 6).toString().indexOf(",") != -1) {
+                                g = Double.parseDouble(jTable1.getValueAt(z, 6).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") && jTable1.getValueAt(z, 6).toString().indexOf(",") == -1) {
+                                g = Integer.parseInt(jTable1.getValueAt(z, 6).toString());
+                            } else {
+                                g = jTable1.getValueAt(z, 6).toString();
+                            }
+                        } else {
+                            g = jTable1.getValueAt(z, 6).toString();
+                        }
+                        
+                        obj.Agregar7parametro(consulta, a, b, c, d, e, f, g);
+                        break;
+                    case 8:
+                        if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") || jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                                a = Double.parseDouble(jTable1.getValueAt(z, 0).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") == -1) {
+                                a = Integer.parseInt(jTable1.getValueAt(z, 0).toString());
+                            } else {
+                                a = jTable1.getValueAt(z, 0).toString();
+                            }
+                        } else {
+                            a = jTable1.getValueAt(z, 0).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") || jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                                b = Double.parseDouble(jTable1.getValueAt(z, 1).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") == -1) {
+                                b = Integer.parseInt(jTable1.getValueAt(z, 1).toString());
+                            } else {
+                                b = jTable1.getValueAt(z, 1).toString();
+                            }
+                        } else {
+                            b = jTable1.getValueAt(z, 1).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") || jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                                c = Double.parseDouble(jTable1.getValueAt(z, 2).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") == -1) {
+                                c = Integer.parseInt(jTable1.getValueAt(z, 2).toString());
+                            } else {
+                                c = jTable1.getValueAt(z, 2).toString();
+                            }
+                        } else {
+                            c = jTable1.getValueAt(z, 2).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") || jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                                d = Double.parseDouble(jTable1.getValueAt(z, 3).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") == -1) {
+                                d = Integer.parseInt(jTable1.getValueAt(z, 3).toString());
+                            } else {
+                                d = jTable1.getValueAt(z, 3).toString();
+                            }
+                        } else {
+                            d = jTable1.getValueAt(z, 3).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") || jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                                e = Double.parseDouble(jTable1.getValueAt(z, 4).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") == -1) {
+                                e = Integer.parseInt(jTable1.getValueAt(z, 4).toString());
+                            } else {
+                                e = jTable1.getValueAt(z, 4).toString();
+                            }
+                        } else {
+                            e = jTable1.getValueAt(z, 4).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") || jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                                f = Double.parseDouble(jTable1.getValueAt(z, 5).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") == -1) {
+                                f = Integer.parseInt(jTable1.getValueAt(z, 5).toString());
+                            } else {
+                                f = jTable1.getValueAt(z, 5).toString();
+                            }
+                        } else {
+                            f = jTable1.getValueAt(z, 5).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") || jTable1.getValueAt(z, 6).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") && jTable1.getValueAt(z, 6).toString().indexOf(",") != -1) {
+                                g = Double.parseDouble(jTable1.getValueAt(z, 6).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") && jTable1.getValueAt(z, 6).toString().indexOf(",") == -1) {
+                                g = Integer.parseInt(jTable1.getValueAt(z, 6).toString());
+                            } else {
+                                g = jTable1.getValueAt(z, 6).toString();
+                            }
+                        } else {
+                            g = jTable1.getValueAt(z, 6).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") || jTable1.getValueAt(z, 7).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") && jTable1.getValueAt(z, 7).toString().indexOf(",") != -1) {
+                                h = Double.parseDouble(jTable1.getValueAt(z, 7).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") && jTable1.getValueAt(z, 7).toString().indexOf(",") == -1) {
+                                h = Integer.parseInt(jTable1.getValueAt(z, 7).toString());
+                            } else {
+                                h = jTable1.getValueAt(z, 7).toString();
+                            }
+                        } else {
+                            h = jTable1.getValueAt(z, 7).toString();
+                        }
+                        
+                        obj.Agregar8parametro(consulta, a, b, c, d, e, f, g, h);
+                        break;
+                    case 9:
+                        if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") || jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                                a = Double.parseDouble(jTable1.getValueAt(z, 0).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") == -1) {
+                                a = Integer.parseInt(jTable1.getValueAt(z, 0).toString());
+                            } else {
+                                a = jTable1.getValueAt(z, 0).toString();
+                            }
+                        } else {
+                            a = jTable1.getValueAt(z, 0).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") || jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                                b = Double.parseDouble(jTable1.getValueAt(z, 1).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") == -1) {
+                                b = Integer.parseInt(jTable1.getValueAt(z, 1).toString());
+                            } else {
+                                b = jTable1.getValueAt(z, 1).toString();
+                            }
+                        } else {
+                            b = jTable1.getValueAt(z, 1).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") || jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                                c = Double.parseDouble(jTable1.getValueAt(z, 2).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") == -1) {
+                                c = Integer.parseInt(jTable1.getValueAt(z, 2).toString());
+                            } else {
+                                c = jTable1.getValueAt(z, 2).toString();
+                            }
+                        } else {
+                            c = jTable1.getValueAt(z, 2).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") || jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                                d = Double.parseDouble(jTable1.getValueAt(z, 3).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") == -1) {
+                                d = Integer.parseInt(jTable1.getValueAt(z, 3).toString());
+                            } else {
+                                d = jTable1.getValueAt(z, 3).toString();
+                            }
+                        } else {
+                            d = jTable1.getValueAt(z, 3).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") || jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                                e = Double.parseDouble(jTable1.getValueAt(z, 4).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") == -1) {
+                                e = Integer.parseInt(jTable1.getValueAt(z, 4).toString());
+                            } else {
+                                e = jTable1.getValueAt(z, 4).toString();
+                            }
+                        } else {
+                            e = jTable1.getValueAt(z, 4).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") || jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                                f = Double.parseDouble(jTable1.getValueAt(z, 5).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") == -1) {
+                                f = Integer.parseInt(jTable1.getValueAt(z, 5).toString());
+                            } else {
+                                f = jTable1.getValueAt(z, 5).toString();
+                            }
+                        } else {
+                            f = jTable1.getValueAt(z, 5).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") || jTable1.getValueAt(z, 6).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") && jTable1.getValueAt(z, 6).toString().indexOf(",") != -1) {
+                                g = Double.parseDouble(jTable1.getValueAt(z, 6).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") && jTable1.getValueAt(z, 6).toString().indexOf(",") == -1) {
+                                g = Integer.parseInt(jTable1.getValueAt(z, 6).toString());
+                            } else {
+                                g = jTable1.getValueAt(z, 6).toString();
+                            }
+                        } else {
+                            g = jTable1.getValueAt(z, 6).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") || jTable1.getValueAt(z, 7).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") && jTable1.getValueAt(z, 7).toString().indexOf(",") != -1) {
+                                h = Double.parseDouble(jTable1.getValueAt(z, 7).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") && jTable1.getValueAt(z, 7).toString().indexOf(",") == -1) {
+                                h = Integer.parseInt(jTable1.getValueAt(z, 7).toString());
+                            } else {
+                                h = jTable1.getValueAt(z, 7).toString();
+                            }
+                        } else {
+                            h = jTable1.getValueAt(z, 7).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") || jTable1.getValueAt(z, 8).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") && jTable1.getValueAt(z,8).toString().indexOf(",") != -1) {
+                                i = Double.parseDouble(jTable1.getValueAt(z, 8).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") && jTable1.getValueAt(z, 8).toString().indexOf(",") == -1) {
+                                i = Integer.parseInt(jTable1.getValueAt(z, 8).toString());
+                            } else {
+                                i = jTable1.getValueAt(z, 8).toString();
+                            }
+                        } else {
+                            i = jTable1.getValueAt(z, 8).toString();
+                        }
+                        
+                        obj.Agregar9parametro(consulta, a, b, c, d, e, f, g, h, i);
+                        break;
+                    case 10:
+                        if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") || jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                                a = Double.parseDouble(jTable1.getValueAt(z, 0).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") == -1) {
+                                a = Integer.parseInt(jTable1.getValueAt(z, 0).toString());
+                            } else {
+                                a = jTable1.getValueAt(z, 0).toString();
+                            }
+                        } else {
+                            a = jTable1.getValueAt(z, 0).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") || jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                                b = Double.parseDouble(jTable1.getValueAt(z, 1).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") == -1) {
+                                b = Integer.parseInt(jTable1.getValueAt(z, 1).toString());
+                            } else {
+                                b = jTable1.getValueAt(z, 1).toString();
+                            }
+                        } else {
+                            b = jTable1.getValueAt(z, 1).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") || jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                                c = Double.parseDouble(jTable1.getValueAt(z, 2).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") == -1) {
+                                c = Integer.parseInt(jTable1.getValueAt(z, 2).toString());
+                            } else {
+                                c = jTable1.getValueAt(z, 2).toString();
+                            }
+                        } else {
+                            c = jTable1.getValueAt(z, 2).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") || jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                                d = Double.parseDouble(jTable1.getValueAt(z, 3).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") == -1) {
+                                d = Integer.parseInt(jTable1.getValueAt(z, 3).toString());
+                            } else {
+                                d = jTable1.getValueAt(z, 3).toString();
+                            }
+                        } else {
+                            d = jTable1.getValueAt(z, 3).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") || jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                                e = Double.parseDouble(jTable1.getValueAt(z, 4).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") == -1) {
+                                e = Integer.parseInt(jTable1.getValueAt(z, 4).toString());
+                            } else {
+                                e = jTable1.getValueAt(z, 4).toString();
+                            }
+                        } else {
+                            e = jTable1.getValueAt(z, 4).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") || jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                                f = Double.parseDouble(jTable1.getValueAt(z, 5).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") == -1) {
+                                f = Integer.parseInt(jTable1.getValueAt(z, 5).toString());
+                            } else {
+                                f = jTable1.getValueAt(z, 5).toString();
+                            }
+                        } else {
+                            f = jTable1.getValueAt(z, 5).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") || jTable1.getValueAt(z, 6).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") && jTable1.getValueAt(z, 6).toString().indexOf(",") != -1) {
+                                g = Double.parseDouble(jTable1.getValueAt(z, 6).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") && jTable1.getValueAt(z, 6).toString().indexOf(",") == -1) {
+                                g = Integer.parseInt(jTable1.getValueAt(z, 6).toString());
+                            } else {
+                                g = jTable1.getValueAt(z, 6).toString();
+                            }
+                        } else {
+                            g = jTable1.getValueAt(z, 6).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") || jTable1.getValueAt(z, 7).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") && jTable1.getValueAt(z, 7).toString().indexOf(",") != -1) {
+                                h = Double.parseDouble(jTable1.getValueAt(z, 7).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") && jTable1.getValueAt(z, 7).toString().indexOf(",") == -1) {
+                                h = Integer.parseInt(jTable1.getValueAt(z, 7).toString());
+                            } else {
+                                h = jTable1.getValueAt(z, 7).toString();
+                            }
+                        } else {
+                            h = jTable1.getValueAt(z, 7).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") || jTable1.getValueAt(z, 8).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") && jTable1.getValueAt(z,8).toString().indexOf(",") != -1) {
+                                i = Double.parseDouble(jTable1.getValueAt(z, 8).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") && jTable1.getValueAt(z, 8).toString().indexOf(",") == -1) {
+                                i = Integer.parseInt(jTable1.getValueAt(z, 8).toString());
+                            } else {
+                                i = jTable1.getValueAt(z, 8).toString();
+                            }
+                        } else {
+                            i = jTable1.getValueAt(z, 8).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 9).toString().matches("[0-9]*") || jTable1.getValueAt(z, 9).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 9).toString().matches("[0-9]*") && jTable1.getValueAt(z,9).toString().indexOf(",") != -1) {
+                                j = Double.parseDouble(jTable1.getValueAt(z, 9).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 9).toString().matches("[0-9]*") && jTable1.getValueAt(z, 9).toString().indexOf(",") == -1) {
+                                j = Integer.parseInt(jTable1.getValueAt(z, 9).toString());
+                            } else {
+                                j = jTable1.getValueAt(z, 9).toString();
+                            }
+                        } else {
+                            j = jTable1.getValueAt(z, 9).toString();
+                        }
+                        
+                        obj.Agregar10parametro(consulta, a, b, c, d, e, f, g, h, i, j);
+                        break;
+                    case 11:
+                        
+                        if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") || jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                                a = Double.parseDouble(jTable1.getValueAt(z, 0).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") == -1) {
+                                a = Integer.parseInt(jTable1.getValueAt(z, 0).toString());
+                            } else {
+                                a = jTable1.getValueAt(z, 0).toString();
+                            }
+                        } else {
+                            a = jTable1.getValueAt(z, 0).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") || jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                                b = Double.parseDouble(jTable1.getValueAt(z, 1).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") == -1) {
+                                b = Integer.parseInt(jTable1.getValueAt(z, 1).toString());
+                            } else {
+                                b = jTable1.getValueAt(z, 1).toString();
+                            }
+                        } else {
+                            b = jTable1.getValueAt(z, 1).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") || jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                                c = Double.parseDouble(jTable1.getValueAt(z, 2).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") == -1) {
+                                c = Integer.parseInt(jTable1.getValueAt(z, 2).toString());
+                            } else {
+                                c = jTable1.getValueAt(z, 2).toString();
+                            }
+                        } else {
+                            c = jTable1.getValueAt(z, 2).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") || jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                                d = Double.parseDouble(jTable1.getValueAt(z, 3).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") == -1) {
+                                d = Integer.parseInt(jTable1.getValueAt(z, 3).toString());
+                            } else {
+                                d = jTable1.getValueAt(z, 3).toString();
+                            }
+                        } else {
+                            d = jTable1.getValueAt(z, 3).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") || jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                                e = Double.parseDouble(jTable1.getValueAt(z, 4).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") == -1) {
+                                e = Integer.parseInt(jTable1.getValueAt(z, 4).toString());
+                            } else {
+                                e = jTable1.getValueAt(z, 4).toString();
+                            }
+                        } else {
+                            e = jTable1.getValueAt(z, 4).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") || jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                                f = Double.parseDouble(jTable1.getValueAt(z, 5).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") == -1) {
+                                f = Integer.parseInt(jTable1.getValueAt(z, 5).toString());
+                            } else {
+                                f = jTable1.getValueAt(z, 5).toString();
+                            }
+                        } else {
+                            f = jTable1.getValueAt(z, 5).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") || jTable1.getValueAt(z, 6).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") && jTable1.getValueAt(z, 6).toString().indexOf(",") != -1) {
+                                g = Double.parseDouble(jTable1.getValueAt(z, 6).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") && jTable1.getValueAt(z, 6).toString().indexOf(",") == -1) {
+                                g = Integer.parseInt(jTable1.getValueAt(z, 6).toString());
+                            } else {
+                                g = jTable1.getValueAt(z, 6).toString();
+                            }
+                        } else {
+                            g = jTable1.getValueAt(z, 6).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") || jTable1.getValueAt(z, 7).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") && jTable1.getValueAt(z, 7).toString().indexOf(",") != -1) {
+                                h = Double.parseDouble(jTable1.getValueAt(z, 7).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") && jTable1.getValueAt(z, 7).toString().indexOf(",") == -1) {
+                                h = Integer.parseInt(jTable1.getValueAt(z, 7).toString());
+                            } else {
+                                h = jTable1.getValueAt(z, 7).toString();
+                            }
+                        } else {
+                            h = jTable1.getValueAt(z, 7).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") || jTable1.getValueAt(z, 8).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") && jTable1.getValueAt(z,8).toString().indexOf(",") != -1) {
+                                i = Double.parseDouble(jTable1.getValueAt(z, 8).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") && jTable1.getValueAt(z, 8).toString().indexOf(",") == -1) {
+                                i = Integer.parseInt(jTable1.getValueAt(z, 8).toString());
+                            } else {
+                                i = jTable1.getValueAt(z, 8).toString();
+                            }
+                        } else {
+                            i = jTable1.getValueAt(z, 8).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 9).toString().matches("[0-9]*") || jTable1.getValueAt(z, 9).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 9).toString().matches("[0-9]*") && jTable1.getValueAt(z,9).toString().indexOf(",") != -1) {
+                                j = Double.parseDouble(jTable1.getValueAt(z, 9).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 9).toString().matches("[0-9]*") && jTable1.getValueAt(z, 9).toString().indexOf(",") == -1) {
+                                j = Integer.parseInt(jTable1.getValueAt(z, 9).toString());
+                            } else {
+                                j = jTable1.getValueAt(z, 9).toString();
+                            }
+                        } else {
+                            j = jTable1.getValueAt(z, 9).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 10).toString().matches("[0-9]*") || jTable1.getValueAt(z, 10).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 10).toString().matches("[0-9]*") && jTable1.getValueAt(z,10).toString().indexOf(",") != -1) {
+                                k = Double.parseDouble(jTable1.getValueAt(z, 10).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 10).toString().matches("[0-9]*") && jTable1.getValueAt(z, 10).toString().indexOf(",") == -1) {
+                                k = Integer.parseInt(jTable1.getValueAt(z, 10).toString());
+                            } else {
+                                k = jTable1.getValueAt(z, 10).toString();
+                            }
+                        } else {
+                            k = jTable1.getValueAt(z, 10).toString();
+                        }
+                        
+                        obj.Agregar11parametro(consulta, a, b, c, d, e, f, g, h, i, j, k);
+                        break;
+                    case 12:
+                        
+                        if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") || jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                                a = Double.parseDouble(jTable1.getValueAt(z, 0).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") == -1) {
+                                a = Integer.parseInt(jTable1.getValueAt(z, 0).toString());
+                            } else {
+                                a = jTable1.getValueAt(z, 0).toString();
+                            }
+                        } else {
+                            a = jTable1.getValueAt(z, 0).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") || jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                                b = Double.parseDouble(jTable1.getValueAt(z, 1).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") == -1) {
+                                b = Integer.parseInt(jTable1.getValueAt(z, 1).toString());
+                            } else {
+                                b = jTable1.getValueAt(z, 1).toString();
+                            }
+                        } else {
+                            b = jTable1.getValueAt(z, 1).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") || jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                                c = Double.parseDouble(jTable1.getValueAt(z, 2).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") == -1) {
+                                c = Integer.parseInt(jTable1.getValueAt(z, 2).toString());
+                            } else {
+                                c = jTable1.getValueAt(z, 2).toString();
+                            }
+                        } else {
+                            c = jTable1.getValueAt(z, 2).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") || jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                                d = Double.parseDouble(jTable1.getValueAt(z, 3).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") == -1) {
+                                d = Integer.parseInt(jTable1.getValueAt(z, 3).toString());
+                            } else {
+                                d = jTable1.getValueAt(z, 3).toString();
+                            }
+                        } else {
+                            d = jTable1.getValueAt(z, 3).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") || jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                                e = Double.parseDouble(jTable1.getValueAt(z, 4).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") == -1) {
+                                e = Integer.parseInt(jTable1.getValueAt(z, 4).toString());
+                            } else {
+                                e = jTable1.getValueAt(z, 4).toString();
+                            }
+                        } else {
+                            e = jTable1.getValueAt(z, 4).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") || jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                                f = Double.parseDouble(jTable1.getValueAt(z, 5).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") == -1) {
+                                f = Integer.parseInt(jTable1.getValueAt(z, 5).toString());
+                            } else {
+                                f = jTable1.getValueAt(z, 5).toString();
+                            }
+                        } else {
+                            f = jTable1.getValueAt(z, 5).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") || jTable1.getValueAt(z, 6).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") && jTable1.getValueAt(z, 6).toString().indexOf(",") != -1) {
+                                g = Double.parseDouble(jTable1.getValueAt(z, 6).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") && jTable1.getValueAt(z, 6).toString().indexOf(",") == -1) {
+                                g = Integer.parseInt(jTable1.getValueAt(z, 6).toString());
+                            } else {
+                                g = jTable1.getValueAt(z, 6).toString();
+                            }
+                        } else {
+                            g = jTable1.getValueAt(z, 6).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") || jTable1.getValueAt(z, 7).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") && jTable1.getValueAt(z, 7).toString().indexOf(",") != -1) {
+                                h = Double.parseDouble(jTable1.getValueAt(z, 7).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") && jTable1.getValueAt(z, 7).toString().indexOf(",") == -1) {
+                                h = Integer.parseInt(jTable1.getValueAt(z, 7).toString());
+                            } else {
+                                h = jTable1.getValueAt(z, 7).toString();
+                            }
+                        } else {
+                            h = jTable1.getValueAt(z, 7).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") || jTable1.getValueAt(z, 8).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") && jTable1.getValueAt(z,8).toString().indexOf(",") != -1) {
+                                i = Double.parseDouble(jTable1.getValueAt(z, 8).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") && jTable1.getValueAt(z, 8).toString().indexOf(",") == -1) {
+                                i = Integer.parseInt(jTable1.getValueAt(z, 8).toString());
+                            } else {
+                                i = jTable1.getValueAt(z, 8).toString();
+                            }
+                        } else {
+                            i = jTable1.getValueAt(z, 8).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 9).toString().matches("[0-9]*") || jTable1.getValueAt(z, 9).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 9).toString().matches("[0-9]*") && jTable1.getValueAt(z,9).toString().indexOf(",") != -1) {
+                                j = Double.parseDouble(jTable1.getValueAt(z, 9).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 9).toString().matches("[0-9]*") && jTable1.getValueAt(z, 9).toString().indexOf(",") == -1) {
+                                j = Integer.parseInt(jTable1.getValueAt(z, 9).toString());
+                            } else {
+                                j = jTable1.getValueAt(z, 9).toString();
+                            }
+                        } else {
+                            j = jTable1.getValueAt(z, 9).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 10).toString().matches("[0-9]*") || jTable1.getValueAt(z, 10).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 10).toString().matches("[0-9]*") && jTable1.getValueAt(z, 10).toString().indexOf(",") != -1) {
+                                k = Double.parseDouble(jTable1.getValueAt(z, 10).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 10).toString().matches("[0-9]*") && jTable1.getValueAt(z, 10).toString().indexOf(",") == -1) {
+                                k = Integer.parseInt(jTable1.getValueAt(z, 10).toString());
+                            } else {
+                                k = jTable1.getValueAt(z, 10).toString();
+                            }
+                        } else {
+                            k = jTable1.getValueAt(z, 10).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 11).toString().matches("[0-9]*") || jTable1.getValueAt(z, 11).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 11).toString().matches("[0-9]*") && jTable1.getValueAt(z, 11).toString().indexOf(",") != -1) {
+                                l = Double.parseDouble(jTable1.getValueAt(z, 11).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 11).toString().matches("[0-9]*") && jTable1.getValueAt(z, 11).toString().indexOf(",") == -1) {
+                                l = Integer.parseInt(jTable1.getValueAt(z, 11).toString());
+                            } else {
+                                l = jTable1.getValueAt(z, 11).toString();
+                            }
+                        } else {
+                            l = jTable1.getValueAt(z, 11).toString();
+                        }
+                        
+                        obj.Agregar12parametro(consulta, a, b, c, d, e, f, g, h, i, j, k,l);
+                        break;
+                    case 13:
+                         if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") || jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                                a = Double.parseDouble(jTable1.getValueAt(z, 0).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") == -1) {
+                                a = Integer.parseInt(jTable1.getValueAt(z, 0).toString());
+                            } else {
+                                a = jTable1.getValueAt(z, 0).toString();
+                            }
+                        } else {
+                            a = jTable1.getValueAt(z, 0).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") || jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                                b = Double.parseDouble(jTable1.getValueAt(z, 1).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") == -1) {
+                                b = Integer.parseInt(jTable1.getValueAt(z, 1).toString());
+                            } else {
+                                b = jTable1.getValueAt(z, 1).toString();
+                            }
+                        } else {
+                            b = jTable1.getValueAt(z, 1).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") || jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                                c = Double.parseDouble(jTable1.getValueAt(z, 2).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") == -1) {
+                                c = Integer.parseInt(jTable1.getValueAt(z, 2).toString());
+                            } else {
+                                c = jTable1.getValueAt(z, 2).toString();
+                            }
+                        } else {
+                            c = jTable1.getValueAt(z, 2).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") || jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                                d = Double.parseDouble(jTable1.getValueAt(z, 3).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") == -1) {
+                                d = Integer.parseInt(jTable1.getValueAt(z, 3).toString());
+                            } else {
+                                d = jTable1.getValueAt(z, 3).toString();
+                            }
+                        } else {
+                            d = jTable1.getValueAt(z, 3).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") || jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                                e = Double.parseDouble(jTable1.getValueAt(z, 4).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") == -1) {
+                                e = Integer.parseInt(jTable1.getValueAt(z, 4).toString());
+                            } else {
+                                e = jTable1.getValueAt(z, 4).toString();
+                            }
+                        } else {
+                            e = jTable1.getValueAt(z, 4).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") || jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                                f = Double.parseDouble(jTable1.getValueAt(z, 5).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") == -1) {
+                                f = Integer.parseInt(jTable1.getValueAt(z, 5).toString());
+                            } else {
+                                f = jTable1.getValueAt(z, 5).toString();
+                            }
+                        } else {
+                            f = jTable1.getValueAt(z, 5).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") || jTable1.getValueAt(z, 6).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") && jTable1.getValueAt(z, 6).toString().indexOf(",") != -1) {
+                                g = Double.parseDouble(jTable1.getValueAt(z, 6).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") && jTable1.getValueAt(z, 6).toString().indexOf(",") == -1) {
+                                g = Integer.parseInt(jTable1.getValueAt(z, 6).toString());
+                            } else {
+                                g = jTable1.getValueAt(z, 6).toString();
+                            }
+                        } else {
+                            g = jTable1.getValueAt(z, 6).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") || jTable1.getValueAt(z, 7).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") && jTable1.getValueAt(z, 7).toString().indexOf(",") != -1) {
+                                h = Double.parseDouble(jTable1.getValueAt(z, 7).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") && jTable1.getValueAt(z, 7).toString().indexOf(",") == -1) {
+                                h = Integer.parseInt(jTable1.getValueAt(z, 7).toString());
+                            } else {
+                                h = jTable1.getValueAt(z, 7).toString();
+                            }
+                        } else {
+                            h = jTable1.getValueAt(z, 7).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") || jTable1.getValueAt(z, 8).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") && jTable1.getValueAt(z,8).toString().indexOf(",") != -1) {
+                                i = Double.parseDouble(jTable1.getValueAt(z, 8).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") && jTable1.getValueAt(z, 8).toString().indexOf(",") == -1) {
+                                i = Integer.parseInt(jTable1.getValueAt(z, 8).toString());
+                            } else {
+                                i = jTable1.getValueAt(z, 8).toString();
+                            }
+                        } else {
+                            i = jTable1.getValueAt(z, 8).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 9).toString().matches("[0-9]*") || jTable1.getValueAt(z, 9).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 9).toString().matches("[0-9]*") && jTable1.getValueAt(z,9).toString().indexOf(",") != -1) {
+                                j = Double.parseDouble(jTable1.getValueAt(z, 9).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 9).toString().matches("[0-9]*") && jTable1.getValueAt(z, 9).toString().indexOf(",") == -1) {
+                                j = Integer.parseInt(jTable1.getValueAt(z, 9).toString());
+                            } else {
+                                j = jTable1.getValueAt(z, 9).toString();
+                            }
+                        } else {
+                            j = jTable1.getValueAt(z, 9).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 10).toString().matches("[0-9]*") || jTable1.getValueAt(z, 10).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 10).toString().matches("[0-9]*") && jTable1.getValueAt(z, 10).toString().indexOf(",") != -1) {
+                                k = Double.parseDouble(jTable1.getValueAt(z, 10).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 10).toString().matches("[0-9]*") && jTable1.getValueAt(z, 10).toString().indexOf(",") == -1) {
+                                k = Integer.parseInt(jTable1.getValueAt(z, 10).toString());
+                            } else {
+                                k = jTable1.getValueAt(z, 10).toString();
+                            }
+                        } else {
+                            k = jTable1.getValueAt(z, 10).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 11).toString().matches("[0-9]*") || jTable1.getValueAt(z, 11).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 11).toString().matches("[0-9]*") && jTable1.getValueAt(z, 11).toString().indexOf(",") != -1) {
+                                l = Double.parseDouble(jTable1.getValueAt(z, 11).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 11).toString().matches("[0-9]*") && jTable1.getValueAt(z, 11).toString().indexOf(",") == -1) {
+                                l = Integer.parseInt(jTable1.getValueAt(z, 11).toString());
+                            } else {
+                                l = jTable1.getValueAt(z, 11).toString();
+                            }
+                        } else {
+                            l = jTable1.getValueAt(z, 11).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 12).toString().matches("[0-9]*") || jTable1.getValueAt(z, 12).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 12).toString().matches("[0-9]*") && jTable1.getValueAt(z, 12).toString().indexOf(",") != -1) {
+                                m = Double.parseDouble(jTable1.getValueAt(z, 12).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 12).toString().matches("[0-9]*") && jTable1.getValueAt(z, 12).toString().indexOf(",") == -1) {
+                                m = Integer.parseInt(jTable1.getValueAt(z, 12).toString());
+                            } else {
+                                m = jTable1.getValueAt(z, 12).toString();
+                            }
+                        } else {
+                            m = jTable1.getValueAt(z, 12).toString();
+                        }
+                        obj.Agregar13parametro(consulta, a, b, c, d, e, f, g, h, i, j, k, l,m);
+                        break;
+                    case 14:
+                        if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") || jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                                a = Double.parseDouble(jTable1.getValueAt(z, 0).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") == -1) {
+                                a = Integer.parseInt(jTable1.getValueAt(z, 0).toString());
+                            } else {
+                                a = jTable1.getValueAt(z, 0).toString();
+                            }
+                        } else {
+                            a = jTable1.getValueAt(z, 0).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") || jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                                b = Double.parseDouble(jTable1.getValueAt(z, 1).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") == -1) {
+                                b = Integer.parseInt(jTable1.getValueAt(z, 1).toString());
+                            } else {
+                                b = jTable1.getValueAt(z, 1).toString();
+                            }
+                        } else {
+                            b = jTable1.getValueAt(z, 1).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") || jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                                c = Double.parseDouble(jTable1.getValueAt(z, 2).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") == -1) {
+                                c = Integer.parseInt(jTable1.getValueAt(z, 2).toString());
+                            } else {
+                                c = jTable1.getValueAt(z, 2).toString();
+                            }
+                        } else {
+                            c = jTable1.getValueAt(z, 2).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") || jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                                d = Double.parseDouble(jTable1.getValueAt(z, 3).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") == -1) {
+                                d = Integer.parseInt(jTable1.getValueAt(z, 3).toString());
+                            } else {
+                                d = jTable1.getValueAt(z, 3).toString();
+                            }
+                        } else {
+                            d = jTable1.getValueAt(z, 3).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") || jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                                e = Double.parseDouble(jTable1.getValueAt(z, 4).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") == -1) {
+                                e = Integer.parseInt(jTable1.getValueAt(z, 4).toString());
+                            } else {
+                                e = jTable1.getValueAt(z, 4).toString();
+                            }
+                        } else {
+                            e = jTable1.getValueAt(z, 4).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") || jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                                f = Double.parseDouble(jTable1.getValueAt(z, 5).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") == -1) {
+                                f = Integer.parseInt(jTable1.getValueAt(z, 5).toString());
+                            } else {
+                                f = jTable1.getValueAt(z, 5).toString();
+                            }
+                        } else {
+                            f = jTable1.getValueAt(z, 5).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") || jTable1.getValueAt(z, 6).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") && jTable1.getValueAt(z, 6).toString().indexOf(",") != -1) {
+                                g = Double.parseDouble(jTable1.getValueAt(z, 6).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") && jTable1.getValueAt(z, 6).toString().indexOf(",") == -1) {
+                                g = Integer.parseInt(jTable1.getValueAt(z, 6).toString());
+                            } else {
+                                g = jTable1.getValueAt(z, 6).toString();
+                            }
+                        } else {
+                            g = jTable1.getValueAt(z, 6).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") || jTable1.getValueAt(z, 7).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") && jTable1.getValueAt(z, 7).toString().indexOf(",") != -1) {
+                                h = Double.parseDouble(jTable1.getValueAt(z, 7).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") && jTable1.getValueAt(z, 7).toString().indexOf(",") == -1) {
+                                h = Integer.parseInt(jTable1.getValueAt(z, 7).toString());
+                            } else {
+                                h = jTable1.getValueAt(z, 7).toString();
+                            }
+                        } else {
+                            h = jTable1.getValueAt(z, 7).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") || jTable1.getValueAt(z, 8).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") && jTable1.getValueAt(z,8).toString().indexOf(",") != -1) {
+                                i = Double.parseDouble(jTable1.getValueAt(z, 8).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") && jTable1.getValueAt(z, 8).toString().indexOf(",") == -1) {
+                                i = Integer.parseInt(jTable1.getValueAt(z, 8).toString());
+                            } else {
+                                i = jTable1.getValueAt(z, 8).toString();
+                            }
+                        } else {
+                            i = jTable1.getValueAt(z, 8).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 9).toString().matches("[0-9]*") || jTable1.getValueAt(z, 9).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 9).toString().matches("[0-9]*") && jTable1.getValueAt(z,9).toString().indexOf(",") != -1) {
+                                j = Double.parseDouble(jTable1.getValueAt(z, 9).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 9).toString().matches("[0-9]*") && jTable1.getValueAt(z, 9).toString().indexOf(",") == -1) {
+                                j = Integer.parseInt(jTable1.getValueAt(z, 9).toString());
+                            } else {
+                                j = jTable1.getValueAt(z, 9).toString();
+                            }
+                        } else {
+                            j = jTable1.getValueAt(z, 9).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 10).toString().matches("[0-9]*") || jTable1.getValueAt(z, 10).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 10).toString().matches("[0-9]*") && jTable1.getValueAt(z, 10).toString().indexOf(",") != -1) {
+                                k = Double.parseDouble(jTable1.getValueAt(z, 10).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 10).toString().matches("[0-9]*") && jTable1.getValueAt(z, 10).toString().indexOf(",") == -1) {
+                                k = Integer.parseInt(jTable1.getValueAt(z, 10).toString());
+                            } else {
+                                k = jTable1.getValueAt(z, 10).toString();
+                            }
+                        } else {
+                            k = jTable1.getValueAt(z, 10).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 11).toString().matches("[0-9]*") || jTable1.getValueAt(z, 11).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 11).toString().matches("[0-9]*") && jTable1.getValueAt(z, 11).toString().indexOf(",") != -1) {
+                                l = Double.parseDouble(jTable1.getValueAt(z, 11).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 11).toString().matches("[0-9]*") && jTable1.getValueAt(z, 11).toString().indexOf(",") == -1) {
+                                l = Integer.parseInt(jTable1.getValueAt(z, 11).toString());
+                            } else {
+                                l = jTable1.getValueAt(z, 11).toString();
+                            }
+                        } else {
+                            l = jTable1.getValueAt(z, 11).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 12).toString().matches("[0-9]*") || jTable1.getValueAt(z, 12).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 12).toString().matches("[0-9]*") && jTable1.getValueAt(z, 12).toString().indexOf(",") != -1) {
+                                m = Double.parseDouble(jTable1.getValueAt(z, 12).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 12).toString().matches("[0-9]*") && jTable1.getValueAt(z, 12).toString().indexOf(",") == -1) {
+                                m = Integer.parseInt(jTable1.getValueAt(z, 12).toString());
+                            } else {
+                                m = jTable1.getValueAt(z, 12).toString();
+                            }
+                        } else {
+                            m = jTable1.getValueAt(z, 12).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 13).toString().matches("[0-9]*") || jTable1.getValueAt(z, 13).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 13).toString().matches("[0-9]*") && jTable1.getValueAt(z, 13).toString().indexOf(",") != -1) {
+                                n = Double.parseDouble(jTable1.getValueAt(z, 13).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 13).toString().matches("[0-9]*") && jTable1.getValueAt(z, 13).toString().indexOf(",") == -1) {
+                                n = Integer.parseInt(jTable1.getValueAt(z, 13).toString());
+                            } else {
+                                n = jTable1.getValueAt(z, 13).toString();
+                            }
+                        } else {
+                            n = jTable1.getValueAt(z, 13).toString();
+                        }
+                        obj.Agregar14parametro(consulta, a, b, c, d, e, f, g, h, i, j, k, l, m,n);
+                        break;
+                    case 15:
+                        if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") || jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") != -1) {
+                                a = Double.parseDouble(jTable1.getValueAt(z, 0).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 0).toString().matches("[0-9]*") && jTable1.getValueAt(z, 0).toString().indexOf(",") == -1) {
+                                a = Integer.parseInt(jTable1.getValueAt(z, 0).toString());
+                            } else {
+                                a = jTable1.getValueAt(z, 0).toString();
+                            }
+                        } else {
+                            a = jTable1.getValueAt(z, 0).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") || jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") != -1) {
+                                b = Double.parseDouble(jTable1.getValueAt(z, 1).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 1).toString().matches("[0-9]*") && jTable1.getValueAt(z, 1).toString().indexOf(",") == -1) {
+                                b = Integer.parseInt(jTable1.getValueAt(z, 1).toString());
+                            } else {
+                                b = jTable1.getValueAt(z, 1).toString();
+                            }
+                        } else {
+                            b = jTable1.getValueAt(z, 1).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") || jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") != -1) {
+                                c = Double.parseDouble(jTable1.getValueAt(z, 2).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 2).toString().matches("[0-9]*") && jTable1.getValueAt(z, 2).toString().indexOf(",") == -1) {
+                                c = Integer.parseInt(jTable1.getValueAt(z, 2).toString());
+                            } else {
+                                c = jTable1.getValueAt(z, 2).toString();
+                            }
+                        } else {
+                            c = jTable1.getValueAt(z, 2).toString();
+                        }
+
+                        if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") || jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") != -1) {
+                                d = Double.parseDouble(jTable1.getValueAt(z, 3).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 3).toString().matches("[0-9]*") && jTable1.getValueAt(z, 3).toString().indexOf(",") == -1) {
+                                d = Integer.parseInt(jTable1.getValueAt(z, 3).toString());
+                            } else {
+                                d = jTable1.getValueAt(z, 3).toString();
+                            }
+                        } else {
+                            d = jTable1.getValueAt(z, 3).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") || jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") != -1) {
+                                e = Double.parseDouble(jTable1.getValueAt(z, 4).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 4).toString().matches("[0-9]*") && jTable1.getValueAt(z, 4).toString().indexOf(",") == -1) {
+                                e = Integer.parseInt(jTable1.getValueAt(z, 4).toString());
+                            } else {
+                                e = jTable1.getValueAt(z, 4).toString();
+                            }
+                        } else {
+                            e = jTable1.getValueAt(z, 4).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") || jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") != -1) {
+                                f = Double.parseDouble(jTable1.getValueAt(z, 5).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 5).toString().matches("[0-9]*") && jTable1.getValueAt(z, 5).toString().indexOf(",") == -1) {
+                                f = Integer.parseInt(jTable1.getValueAt(z, 5).toString());
+                            } else {
+                                f = jTable1.getValueAt(z, 5).toString();
+                            }
+                        } else {
+                            f = jTable1.getValueAt(z, 5).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") || jTable1.getValueAt(z, 6).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") && jTable1.getValueAt(z, 6).toString().indexOf(",") != -1) {
+                                g = Double.parseDouble(jTable1.getValueAt(z, 6).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 6).toString().matches("[0-9]*") && jTable1.getValueAt(z, 6).toString().indexOf(",") == -1) {
+                                g = Integer.parseInt(jTable1.getValueAt(z, 6).toString());
+                            } else {
+                                g = jTable1.getValueAt(z, 6).toString();
+                            }
+                        } else {
+                            g = jTable1.getValueAt(z, 6).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") || jTable1.getValueAt(z, 7).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") && jTable1.getValueAt(z, 7).toString().indexOf(",") != -1) {
+                                h = Double.parseDouble(jTable1.getValueAt(z, 7).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 7).toString().matches("[0-9]*") && jTable1.getValueAt(z, 7).toString().indexOf(",") == -1) {
+                                h = Integer.parseInt(jTable1.getValueAt(z, 7).toString());
+                            } else {
+                                h = jTable1.getValueAt(z, 7).toString();
+                            }
+                        } else {
+                            h = jTable1.getValueAt(z, 7).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") || jTable1.getValueAt(z, 8).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") && jTable1.getValueAt(z,8).toString().indexOf(",") != -1) {
+                                i = Double.parseDouble(jTable1.getValueAt(z, 8).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 8).toString().matches("[0-9]*") && jTable1.getValueAt(z, 8).toString().indexOf(",") == -1) {
+                                i = Integer.parseInt(jTable1.getValueAt(z, 8).toString());
+                            } else {
+                                i = jTable1.getValueAt(z, 8).toString();
+                            }
+                        } else {
+                            i = jTable1.getValueAt(z, 8).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 9).toString().matches("[0-9]*") || jTable1.getValueAt(z, 9).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 9).toString().matches("[0-9]*") && jTable1.getValueAt(z,9).toString().indexOf(",") != -1) {
+                                j = Double.parseDouble(jTable1.getValueAt(z, 9).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 9).toString().matches("[0-9]*") && jTable1.getValueAt(z, 9).toString().indexOf(",") == -1) {
+                                j = Integer.parseInt(jTable1.getValueAt(z, 9).toString());
+                            } else {
+                                j = jTable1.getValueAt(z, 9).toString();
+                            }
+                        } else {
+                            j = jTable1.getValueAt(z, 9).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 10).toString().matches("[0-9]*") || jTable1.getValueAt(z, 10).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 10).toString().matches("[0-9]*") && jTable1.getValueAt(z, 10).toString().indexOf(",") != -1) {
+                                k = Double.parseDouble(jTable1.getValueAt(z, 10).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 10).toString().matches("[0-9]*") && jTable1.getValueAt(z, 10).toString().indexOf(",") == -1) {
+                                k = Integer.parseInt(jTable1.getValueAt(z, 10).toString());
+                            } else {
+                                k = jTable1.getValueAt(z, 10).toString();
+                            }
+                        } else {
+                            k = jTable1.getValueAt(z, 10).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 11).toString().matches("[0-9]*") || jTable1.getValueAt(z, 11).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 11).toString().matches("[0-9]*") && jTable1.getValueAt(z, 11).toString().indexOf(",") != -1) {
+                                l = Double.parseDouble(jTable1.getValueAt(z, 11).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 11).toString().matches("[0-9]*") && jTable1.getValueAt(z, 11).toString().indexOf(",") == -1) {
+                                l = Integer.parseInt(jTable1.getValueAt(z, 11).toString());
+                            } else {
+                                l = jTable1.getValueAt(z, 11).toString();
+                            }
+                        } else {
+                            l = jTable1.getValueAt(z, 11).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 12).toString().matches("[0-9]*") || jTable1.getValueAt(z, 12).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 12).toString().matches("[0-9]*") && jTable1.getValueAt(z, 12).toString().indexOf(",") != -1) {
+                                m = Double.parseDouble(jTable1.getValueAt(z, 12).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 12).toString().matches("[0-9]*") && jTable1.getValueAt(z, 12).toString().indexOf(",") == -1) {
+                                m = Integer.parseInt(jTable1.getValueAt(z, 12).toString());
+                            } else {
+                                m = jTable1.getValueAt(z, 12).toString();
+                            }
+                        } else {
+                            m = jTable1.getValueAt(z, 12).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 13).toString().matches("[0-9]*") || jTable1.getValueAt(z, 13).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 13).toString().matches("[0-9]*") && jTable1.getValueAt(z, 13).toString().indexOf(",") != -1) {
+                                n = Double.parseDouble(jTable1.getValueAt(z, 13).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 13).toString().matches("[0-9]*") && jTable1.getValueAt(z, 13).toString().indexOf(",") == -1) {
+                                n = Integer.parseInt(jTable1.getValueAt(z, 13).toString());
+                            } else {
+                                n = jTable1.getValueAt(z, 13).toString();
+                            }
+                        } else {
+                            n = jTable1.getValueAt(z, 13).toString();
+                        }
+                        
+                        if (jTable1.getValueAt(z, 14).toString().matches("[0-9]*") || jTable1.getValueAt(z, 14).toString().indexOf(",") != -1) {
+                            if (jTable1.getValueAt(z, 14).toString().matches("[0-9]*") && jTable1.getValueAt(z, 14).toString().indexOf(",") != -1) {
+                                ñ = Double.parseDouble(jTable1.getValueAt(z, 14).toString().replace(",", "."));
+                            } else if (jTable1.getValueAt(z, 14).toString().matches("[0-9]*") && jTable1.getValueAt(z, 14).toString().indexOf(",") == -1) {
+                                ñ = Integer.parseInt(jTable1.getValueAt(z, 14).toString());
+                            } else {
+                                ñ = jTable1.getValueAt(z, 14).toString();
+                            }
+                        } else {
+                            ñ = jTable1.getValueAt(z, 14).toString();
+                        }
+                        obj.Agregar15parametro(consulta, a, b, c, d, e, f, g, h, i, j, k, l, m, n,ñ);
+                        break;
+                }
